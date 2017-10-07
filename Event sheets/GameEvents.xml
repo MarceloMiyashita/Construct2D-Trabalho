@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GameEvents</name>
+    <events>
+        <variable constant="0" name="MaiorPonto" sid="515889451821170" static="0" type="number">0</variable>
+        <variable constant="0" name="Score" sid="585103355988416" static="0" type="number">0</variable>
+        <variable constant="0" name="lastX" sid="653283063878152" static="0" type="number">0</variable>
+        <variable constant="0" name="lastY" sid="569900134583542" static="0" type="number">0</variable>
+        <event-block sid="357061961137960">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="676977289377631" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="443057715226765" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="239886749571474">
+            <conditions>
+                <condition id="0" name="On any touch start" sid="973432347771304" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="725095005019430" type="System">
+                    <param id="0" name="Variable">lastX</param>
+                    <param id="1" name="Value">Touch.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="920726245657459" type="System">
+                    <param id="0" name="Variable">lastY</param>
+                    <param id="1" name="Value">Touch.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="201613256663496">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="620609952199047" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="670398621688330" type="System">
+                    <param id="0" name="Object to create">Slash</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="X">lastX</param>
+                    <param id="3" name="Y">lastY</param>
+                </action>
+                <action id="-5" name="Set width" sid="209678965295440" type="Slash">
+                    <param id="0" name="Width">distance(lastX,lastY,Touch.X, Touch.Y)</param>
+                </action>
+                <action id="-6" name="Set height" sid="692183278801405" type="Slash">
+                    <param id="0" name="Height">Self.Width/15</param>
+                </action>
+                <action id="-8" name="Set angle" sid="575592946166540" type="Slash">
+                    <param id="0" name="Angle">angle(lastX,lastY,Touch.X,touch.Y)</param>
+                </action>
+                <action id="-9" name="Set value" sid="136856515255996" type="System">
+                    <param id="0" name="Variable">lastX</param>
+                    <param id="1" name="Value">Touch.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="853609964097833" type="System">
+                    <param id="0" name="Variable">lastY</param>
+                    <param id="1" name="Value">Touch.Y</param>
+                </action>
+                <action id="0" name="Play" sid="171281605227115" type="Audio">
+                    <param id="0" name="Audio file">sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="263530203783633">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="685605446612490" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="236154739827148" type="Spawner">
+                    <param id="0" name="Object">Smile</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="565846753823694" type="Smile">
+                    <param id="0" name="Angle">random(240,290)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="286508356751637">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="184776273535602" type="System">
+                    <param id="0" name="Interval (seconds)">1.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="422652927308929" type="Spawner">
+                    <param id="0" name="Object">Choro</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="133031535831911" type="Choro">
+                    <param id="0" name="Angle">random(240,290)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="153950551295692">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="182698033468159" type="System">
+                    <param id="0" name="Interval (seconds)">1.6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="438386072173068" type="Spawner">
+                    <param id="0" name="Object">Oculos</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="791354202642369" type="Oculos">
+                    <param id="0" name="Angle">random(240,290)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="339668847209860">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="579674464678475" type="System">
+                    <param id="0" name="Interval (seconds)">6.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="879681011268409" type="Spawner">
+                    <param id="0" name="Object">bombaMacaco</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="308854091493973" type="bombaMacaco">
+                    <param id="0" name="Angle">random(240,290)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="253403982810951">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="501301530288006" type="System">
+                    <param id="0" name="Interval (seconds)">5.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="219921506042340" type="Spawner">
+                    <param id="0" name="Object">bombaMacaco</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="757730097875416" type="bombaMacaco">
+                    <param id="0" name="Angle">random(240,290)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="462996391900219">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="544744480944479" type="System">
+                    <param id="0" name="Interval (seconds)">6.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="161521833196822" type="Spawner">
+                    <param id="0" name="Object">Love</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="491258639335235" type="Love">
+                    <param id="0" name="Angle">random(260,290)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="621002407252677">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="897472607379047" type="Slash">
+                    <param id="0" name="Object">Smile</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="773639346857459" type="Smile" />
+                <action id="0" name="Spawn another object" sid="658789007079027" type="Smile">
+                    <param id="0" name="Object">Splash</param>
+                    <param id="1" name="Layer">&quot;Splash&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="865862805890090" type="Splash">
+                    <param id="0" name="Animation">choose(&quot;Splash1&quot;,&quot;Splash2&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="139845084957500" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="698855698911837" type="Pontuacao">
+                    <param id="0" name="Text">Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="529966717868902">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="383781198004571" type="Slash">
+                    <param id="0" name="Object">Choro</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="899301527390539" type="Choro" />
+                <action id="0" name="Spawn another object" sid="696118964687049" type="Splash">
+                    <param id="0" name="Object">Splash</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="457169211867224" type="Splash2">
+                    <param id="0" name="Animation">choose(&quot;Splash3&quot;,&quot;Splash4&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="165570636663052" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="376218393420899" type="Pontuacao">
+                    <param id="0" name="Text">Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="565886054402969">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="965293835307767" type="Slash">
+                    <param id="0" name="Object">Love</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="948402632854729" type="Love" />
+                <action id="0" name="Spawn another object" sid="633714135625693" type="Splash">
+                    <param id="0" name="Object">Splash</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="730660599243003" type="Splash">
+                    <param id="0" name="Animation">choose(&quot;Splash1&quot;,&quot;Splash2&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="452049792609741" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="850830408200640" type="Pontuacao">
+                    <param id="0" name="Text">Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="318891757020848">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="648298820890024" type="Slash">
+                    <param id="0" name="Object">Oculos</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="779964768956999" type="Oculos" />
+                <action id="0" name="Spawn another object" sid="591756382779995" type="Oculos">
+                    <param id="0" name="Object">Splash2</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="795759984638563" type="Splash2">
+                    <param id="0" name="Animation">choose(&quot;Splash3&quot;,&quot;Splash4&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="305347675812416" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="887038622417525" type="Pontuacao">
+                    <param id="0" name="Text">Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="778757828977248">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="246558422623655" type="Slash">
+                    <param id="0" name="Object">bombaMacaco</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="953937829430990" type="bombaMacaco" />
+                <action id="-2" name="Go to layout" sid="535386475325674" type="System">
+                    <param id="0" name="Layout">GameOver</param>
+                </action>
+                <action id="0" name="Play" sid="614368564507550" type="Audio">
+                    <param id="0" name="Audio file">bomba_www.toquesengracadosmp3.com</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="549733020590411">
+            <conditions />
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

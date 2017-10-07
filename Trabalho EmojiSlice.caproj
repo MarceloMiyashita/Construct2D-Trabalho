@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Trabalho EmojiSlice</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>njjx0tw0l9jn</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>600</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Tela1</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Touch" sid="358535862173536">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="background" sid="807322355969488">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\marcelo\Desktop\fruitsimagens\GameOver.png" />
+        </object-type>
+        <object-type name="bgMenu" sid="350808867230223">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="981572578613390" speed="5">
+                    <frame duration="1" hotspotX="0.501044" hotspotY="0.501558" original-source="C:\Users\marcelo\Desktop\fruitsimagens\completedbg.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.991649" y="0.0124611" />
+                            <point x="0.987474" y="0.981308" />
+                            <point x="0.00626305" y="0.990654" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Title" sid="350467881154750">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="822887544166454" speed="5">
+                    <frame duration="1" hotspotX="0.0443038" hotspotY="0.538462" original-source="C:\Users\marcelo\Desktop\fruitsimagens\Titulo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="127068734444030">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="815201697005005" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503759" original-source="C:\Users\marcelo\Desktop\play.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnPlay" sid="153310309066985">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="281056570190895" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502146" original-source="C:\Users\marcelo\Desktop\medivea\Button.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnSettings" sid="136666092413351">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="853125115237259" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\marcelo\Desktop\fruitsimagens\Botao_Config.png">
+                        <collision-poly>
+                            <point x="0.186567" y="0.194553" />
+                            <point x="0.5" y="0.0389105" />
+                            <point x="0.809702" y="0.198444" />
+                            <point x="0.895522" y="0.498054" />
+                            <point x="0.794776" y="0.785992" />
+                            <point x="0.5" y="0.929961" />
+                            <point x="0.205224" y="0.785992" />
+                            <point x="0.0970149" y="0.498054" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="490250914163046">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="648475789993501">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite2" sid="667256357390971">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="495568372900299">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="451475788755559" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Spawner" sid="994921527946582">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="617632242696989" speed="5">
+                    <frame duration="1" hotspotX="0.46875" hotspotY="-0.03125" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Slash" sid="912189965959587">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="745019681366776">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301853354242580" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.514286" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Splash" sid="690630348941202">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="624348409799779">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Splash1" pingpong="0" repeatcount="1" repeatto="0" sid="410460165567626" speed="5">
+                    <frame duration="1" hotspotX="0.573099" hotspotY="0.590426" original-source="C:\Users\marcelo\Desktop\fruitsimagens\splash6.png">
+                        <collision-poly>
+                            <point x="0.201754" y="0.25266" />
+                            <point x="0.573099" y="0" />
+                            <point x="0.932749" y="0.263298" />
+                            <point x="0.71345" y="0.590426" />
+                            <point x="0.695906" y="0.702128" />
+                            <point x="0.573099" y="1" />
+                            <point x="0.190058" y="0.93883" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Splash2" pingpong="0" repeatcount="1" repeatto="0" sid="503827786025324" speed="5">
+                    <frame duration="1" hotspotX="0.502924" hotspotY="0.5" original-source="C:\Users\marcelo\Desktop\fruitsimagens\splash3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="titleGameOver" sid="739175882411065">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453060603441038" speed="5">
+                    <frame duration="1" hotspotX="0.501558" hotspotY="0.5" original-source="C:\Users\marcelo\Desktop\fruitsimagens\GameOver.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Voltar" sid="861114982911573">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="865772272695752" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502008" original-source="C:\Users\marcelo\Desktop\voltar.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Menu" sid="926626043703281">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802322865934131" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marcelo\Desktop\fruitsimagens\Menu.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Score" sid="523959601201286">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Pontuacao" sid="724098167529473">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Splash2" sid="553848246650953">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="618015019338695">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Splash3" pingpong="0" repeatcount="1" repeatto="0" sid="187215033470641" speed="5">
+                    <frame duration="1" hotspotX="0.494318" hotspotY="0.574766" original-source="C:\Users\marcelo\Desktop\fruitsimagens\splash4.png">
+                        <collision-poly>
+                            <point x="0.133523" y="0.278037" />
+                            <point x="0.494318" y="0.0163551" />
+                            <point x="0.84375" y="0.287383" />
+                            <point x="0.630682" y="0.574766" />
+                            <point x="0.613636" y="0.672897" />
+                            <point x="0.494318" y="0.985981" />
+                            <point x="0.122159" y="0.880841" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Splash4" pingpong="0" repeatcount="1" repeatto="0" sid="305096743998113" speed="5">
+                    <frame duration="1" hotspotX="0.519802" hotspotY="0.514019" original-source="C:\Users\marcelo\Desktop\fruitsimagens\splash2.png">
+                        <collision-poly>
+                            <point x="0.564141" y="0.527926" />
+                            <point x="0.517874" y="0.350606" />
+                            <point x="0.710651" y="0.315838" />
+                            <point x="0.66824" y="0.514019" />
+                            <point x="0.714506" y="0.715676" />
+                            <point x="0.517874" y="0.917334" />
+                            <point x="0.278832" y="0.757399" />
+                            <point x="0.290398" y="0.514019" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marcelo\Desktop\fruitsimagens\splash4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="718360512743158">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="748764165076520" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marcelo\Desktop\images.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text3" sid="768934596804204">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text4" sid="426149506303660">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="933570495936636">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Record" sid="831907867816999">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LocalStorage" sid="449214869212829">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="RecordTotal" sid="149217932954815">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="RecordP" sid="364831039031943">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="WebStorage" sid="231968119219512">
+            <plugin id="WebStorage" />
+        </object-type>
+        <object-type name="Sprite4" sid="366080117957288">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="866976598291596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marcelo\Desktop\macaco.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bombaMacaco" sid="145988102371026">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="183246554842103">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="426352261003353" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.505882" original-source="C:\Users\marcelo\Desktop\macaco.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Smile" sid="978109482377407">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="854210595340832">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="847743740964353">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="795306659803553" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.505882" original-source="C:\Users\marcelo\Desktop\smile.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choro" sid="771460249923478">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="249252260072475">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="491299781228440">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="765583194067182" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.505882" original-source="C:\Users\marcelo\Desktop\triste.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Oculos" sid="911369418715793">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="960357909478656">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="684681290380756">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="768443120385620" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.505882" original-source="C:\Users\marcelo\Desktop\oculos.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Love" sid="946687331492552">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="605060948220112">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="315694741316775">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="996599589480419" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marcelo\Desktop\love.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="860150716093194">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="481629005886995" speed="5">
+                    <frame duration="1" hotspotX="0.503067" hotspotY="0.5" original-source="C:\Users\marcelo\Desktop\Titulo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="855047284165069">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="962894507924290" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marcelo\Desktop\telainicio.png">
+                        <collision-poly>
+                            <point x="0.0645833" y="0.0878187" />
+                            <point x="0.933333" y="0.0906516" />
+                            <point x="0.958333" y="0.5" />
+                            <point x="0.930208" y="0.905099" />
+                            <point x="0.0677083" y="0.907932" />
+                            <point x="0.0375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Nerd" sid="904096919174625">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="176928506683880" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marcelo\Desktop\nerd.png">
+                        <collision-poly>
+                            <point x="0.145833" y="0.145833" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854167" y="0.145833" />
+                            <point x="1" y="0.5" />
+                            <point x="0.854167" y="0.854167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.145833" y="0.854167" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Tela1.xml</layout>
+        <layout>mainMenu.xml</layout>
+        <layout>Game.xml</layout>
+        <layout>Settings.xml</layout>
+        <layout>GameOver.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>MainMenuEvents.xml</event-sheet>
+        <event-sheet>GameEvents.xml</event-sheet>
+        <event-sheet>SettingsEvents.xml</event-sheet>
+        <event-sheet>GameOverEvents.xml</event-sheet>
+        <event-sheet>Tela1Events.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="0">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="25">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="LocalStorage" uid="27" />
+        <global-instance type="WebStorage" uid="28" />
+    </global-instances>
+    <sounds-folder>
+        <file name="sound.ogg" />
+        <file name="bomba_www.toquesengracadosmp3.com.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

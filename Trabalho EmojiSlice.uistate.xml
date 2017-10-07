@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Game</layout>
+        <layout order="2">GameOver</layout>
+        <layout order="3">mainMenu</layout>
+        <layout active="1" order="5">Tela1</layout>
+        <event-sheet order="1">GameEvents</event-sheet>
+        <event-sheet order="4">GameOverEvents</event-sheet>
+        <event-sheet order="6">Tela1Events</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="1" name="Window Size" />
+        <property expanded="0" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/bgMenu/" />
+        <folder expanded="1" path="animation-folder/Title/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/btnPlay/" />
+        <folder expanded="1" path="animation-folder/btnSettings/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Spawner/" />
+        <folder expanded="1" path="animation-folder/Slash/" />
+        <folder expanded="1" path="animation-folder/Splash/" />
+        <folder expanded="1" path="animation-folder/titleGameOver/" />
+        <folder expanded="1" path="animation-folder/Voltar/" />
+        <folder expanded="1" path="animation-folder/Menu/" />
+        <folder expanded="1" path="animation-folder/Splash2/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/bombaMacaco/" />
+        <folder expanded="1" path="animation-folder/Smile/" />
+        <folder expanded="1" path="animation-folder/Choro/" />
+        <folder expanded="1" path="animation-folder/Oculos/" />
+        <folder expanded="1" path="animation-folder/Love/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Nerd/" />
+    </folders-expanded>
+</c2uistate>
